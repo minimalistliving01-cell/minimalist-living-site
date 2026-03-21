@@ -1,47 +1,128 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>Minimalist Living</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-body {
-font-family: Arial, sans-serif;
-max-width: 900px;
-margin: auto;
-padding: 20px;
-background-color: #fafafa;
-color: #333;
+
+body{
+font-family: system-ui, -apple-system, sans-serif;
+margin:0;
+background:#f8f8f8;
+color:#222;
 }
 
-h1 {
-text-align: center;
+.header{
+text-align:center;
+padding:60px 20px;
+background:white;
+border-bottom:1px solid #eee;
 }
 
-a {
-display: block;
-margin: 10px 0;
-text-decoration: none;
-font-size: 18px;
-color: #444;
+.header h1{
+font-size:42px;
+margin:0;
+font-weight:500;
 }
 
-a:hover {
-color: black;
+.header p{
+color:#777;
 }
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,0.04);
+text-decoration:none;
+color:#222;
+transition:0.2s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h2{
+margin-top:0;
+font-size:20px;
+}
+
+.footer{
+text-align:center;
+padding:40px;
+color:#888;
+}
+
 </style>
+
 </head>
 
 <body>
 
+<div class="header">
+
 <h1>Minimalist Living</h1>
 
-<h2>Categories</h2>
+<p>Modern ideas for beautiful, simple homes</p>
 
-<a href="small-living-room-ideas.html">Small Living Room Ideas</a>
-<a href="#">Bathroom Ideas</a>
-<a href="#">Kitchen Ideas</a>
-<a href="#">Bedroom Ideas</a>
-<a href="#">Sofa Ideas</a>
+</div>
+
+<div class="container">
+
+<div class="grid">
+
+<a class="card" href="small-living-room-ideas.html">
+<h2>Living Room Ideas</h2>
+<p>Minimalist layouts, cozy decor and modern inspiration</p>
+</a>
+
+<a class="card" href="#">
+<h2>Bathroom Ideas</h2>
+<p>Japandi bathrooms, modern luxury and small spaces</p>
+</a>
+
+<a class="card" href="#">
+<h2>Kitchen Ideas</h2>
+<p>Modern kitchens, neutral colors and smart layouts</p>
+</a>
+
+<a class="card" href="#">
+<h2>Bedroom Ideas</h2>
+<p>Cozy bedroom inspiration and minimalist decor</p>
+</a>
+
+<a class="card" href="#">
+<h2>Sofa Ideas</h2>
+<p>Cloud sofas, sectionals and modern couch inspiration</p>
+</a>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+Minimalist Living © 2026
+
+</div>
 
 </body>
 
