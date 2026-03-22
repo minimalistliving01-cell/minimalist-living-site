@@ -19,12 +19,12 @@ def create_article(keyword):
 
     for i in range(1,11):
 
-        content += f"""
-        <h2>Idea {i}</h2>
-
-        <img src="../images/{keyword.replace(' ','-')}-{i}.jpg">
-
-        <p>Modern {keyword} inspiration designed for functionality and comfort. Focus on clean layouts, neutral colors and timeless decor.</p>
+       content += f"""
+       <h2>Idea {i}</h2>
+        
+       <img src="images/{keyword.replace(' ','-')}-{i}.jpg">
+        
+       <p>Modern {keyword} inspiration designed for functionality and comfort.</p>
         """
 
     html = template.replace("{{TITLE}}", title)
