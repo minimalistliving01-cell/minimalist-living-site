@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -9,28 +10,19 @@
 
 <style>
 
+:root{
+--bg:#f7f6f4;
+--card:#ffffff;
+--text:#222;
+--accent:#c6b8a3;
+--border:#eceae7;
+}
+
 body{
-font-family: system-ui, -apple-system, sans-serif;
 margin:0;
-background:#f8f8f8;
-color:#222;
-}
-
-.header{
-text-align:center;
-padding:60px 20px;
-background:white;
-border-bottom:1px solid #eee;
-}
-
-.header h1{
-font-size:42px;
-margin:0;
-font-weight:500;
-}
-
-.header p{
-color:#777;
+font-family: system-ui;
+background:var(--bg);
+color:var(--text);
 }
 
 .container{
@@ -39,36 +31,39 @@ margin:auto;
 padding:40px 20px;
 }
 
+h1{
+font-weight:500;
+letter-spacing:.5px;
+}
+
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
 gap:20px;
+margin-top:30px;
 }
 
 .card{
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 2px 8px rgba(0,0,0,0.04);
-text-decoration:none;
-color:#222;
-transition:0.2s;
+background:var(--card);
+padding:20px;
+border-radius:14px;
+border:1px solid var(--border);
+transition:.2s;
 }
 
 .card:hover{
-transform:translateY(-4px);
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transform:translateY(-3px);
 }
 
-.card h2{
-margin-top:0;
-font-size:20px;
+a{
+text-decoration:none;
+color:inherit;
 }
 
-.footer{
-text-align:center;
-padding:40px;
-color:#888;
+.tag{
+font-size:12px;
+color:#777;
+margin-bottom:6px;
 }
 
 </style>
@@ -77,50 +72,51 @@ color:#888;
 
 <body>
 
-<div class="header">
+<div class="container">
 
 <h1>Minimalist Living</h1>
 
-<p>Modern ideas for beautiful, simple homes</p>
-
-</div>
-
-<div class="container">
+<p>Simple, modern home inspiration for beautiful everyday spaces.</p>
 
 <div class="grid">
 
-<a class="card" href="small-living-room-ideas.html">
-<h2>Living Room Ideas</h2>
-<p>Minimalist layouts, cozy decor and modern inspiration</p>
+<a href="small-living-room-ideas.html">
+<div class="card">
+
+<div class="tag">Living Room</div>
+
+<h3>Small Living Room Ideas</h3>
+
+<p>Space-saving layouts and cozy minimalist styling.</p>
+
+</div>
 </a>
 
-<a class="card" href="#">
-<h2>Bathroom Ideas</h2>
-<p>Japandi bathrooms, modern luxury and small spaces</p>
+<a href="minimalist-bedroom-ideas.html">
+<div class="card">
+
+<div class="tag">Bedroom</div>
+
+<h3>Minimalist Bedroom Ideas</h3>
+
+<p>Calm spaces designed for comfort and simplicity.</p>
+
+</div>
 </a>
 
-<a class="card" href="#">
-<h2>Kitchen Ideas</h2>
-<p>Modern kitchens, neutral colors and smart layouts</p>
-</a>
+<a href="japandi-bathroom-design.html">
+<div class="card">
 
-<a class="card" href="#">
-<h2>Bedroom Ideas</h2>
-<p>Cozy bedroom inspiration and minimalist decor</p>
-</a>
+<div class="tag">Bathroom</div>
 
-<a class="card" href="#">
-<h2>Sofa Ideas</h2>
-<p>Cloud sofas, sectionals and modern couch inspiration</p>
+<h3>Japandi Bathroom Design</h3>
+
+<p>Modern spa-like inspiration.</p>
+
+</div>
 </a>
 
 </div>
-
-</div>
-
-<div class="footer">
-
-Minimalist Living © 2026
 
 </div>
 
